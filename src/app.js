@@ -15,4 +15,12 @@ window.onload = function() {
     "during my lunch",
     "while I was praying"
   ];
+  var random1 = Math.floor(Math.random() * 4);
+  console.log(who[random1]);
+  var random2 = Math.floor(Math.random() * 4);
+  console.log(what[random2]);
+  var random3 = Math.floor(Math.random() * 5);
+  console.log(when[random3]);
+  document.querySelector("p").innerHTML =
+    who[random1] + " " + what[random2] + " " + when[random3];
 };
